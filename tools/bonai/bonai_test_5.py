@@ -82,8 +82,8 @@ def choose_test_dataset(cfg, args, mask_type, data_root):
     if "roof" in mask_type or "footprint" in mask_type:
         mask_short = "footprint" if "footprint" in mask_type else "roof"
 
-        cfg.data.test.ann_file = f"{data_root}BONAI/coco/bonai_shanghai_xian_test_{mask_short}.json"
-        cfg.data.test.img_prefix = data_root + "BONAI/test/images/"
+        cfg.data.test.ann_file = f"{data_root}/coco/bonai_test_5.json"
+        cfg.data.test.img_prefix = data_root + "/images/"
         if args.city == "bonai":
             print("################ Use Default City BONAI shanghai_xian for TEST ################")
         elif args.city in ["bonai_hk"]:  # For City Group
