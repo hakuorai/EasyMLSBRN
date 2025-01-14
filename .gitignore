@@ -120,7 +120,7 @@ mmdet/.mim
 work_dirs/
 work_dirs
 tmp/
-#bstool/
+bstool/
 wwtool/
 
 
